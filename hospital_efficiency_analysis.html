@@ -3,167 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Efficiency Analysis - DubsTech 2025</title>
-    <style>
-        .tableauPlaceholder {
-            margin-top: 20px;
-	}
-	.about-img img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-    </style>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <title>NY Hospital Efficiency Analysis - DubsTech 2025</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">NY Hospital</span>
-                <span class="down">Efficiency Analysis</span>
-            </h1>
-            <p class="header-subtitle">6th DubsTech Datathon 2025</p>            
-        </div>              
-    </header><!-- end of page header -->
-
-     <!-- Background Session -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/hospital_bed.jpg" class="about-img" alt="">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Background</p>
-                    <h2 class="section-title mb-3">New York Hospital</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo a iste 
-                        <br>culpa! Quasi quibusdam hic recusandae delectus velit officiis explicabo voluptatibus! Nemo esse similique, voluptates labore distinctio, placeat explicabo facilis molestias, blanditiis culpa iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa sint ex voluptatum expedita aliquid! Debitis, nam!              
-                    </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Data Source</button>
-                </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of Background Session -->
+<body>
+    <header>
+        <div class="container" style="background-color: transparent; box-shadow: none; margin-top: 0; background-image: none;">
+            <h1>NY HOSPITALS EFFICIENCY ANALYSIS</h1>
+            <div class="subtitle">~6th DubsTech Datathon 2025~</div>
+            <div class="data-source">Data Source: [Your Data Source Here]</div>
+        </div>
+    </header>
     
-    <!-- Analysis section -->
-    <section class="section" id="portfolio">
-        <div class="container text-center">
-            <p class="section-subtitle">How we determine efficiency ?</p>
-            <h6 class="section-title mb-6">Discharge Rate x Severity x Profitability</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class=portfolio-card">
-                        <img src="assets/hospital_bed.jpg" class="portfolio-card-img">    
-                        <span class="dischage-card-overlay">
-                            <span class="dischage-card-caption">
-                                <h4>Discharge</h5>
-                                <p class="font-weight-normal">xxxxx</p>
-                            </span>                         
-                        </span>                     
-                    </a>
+    <main>
+        <div class="container">
+            <section class="content-section">
+                <h2>Background</h2>
+                <p>This analysis examines the operational efficiency of New York hospitals using data from 2025. We evaluate key performance indicators across multiple dimensions to identify best practices and areas for improvement in healthcare delivery.</p>
+                <p>Our methodology combines quantitative metrics with qualitative assessments to provide a comprehensive view of hospital performance while accounting for variations in patient populations and service offerings.</p>
+            </section>
+        </div>
+        
+        <div class="container">
+            <section class="content-section">
+                <h2>Data Source</h2>
+                <div class="image-placeholder">
+                    [Interactive Data Visualization Will Appear Here]
                 </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/mini_staff.jpg" class="img-responsive rounded">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Severity</h5>
-                                <p class="font-weight-normal">xxxxx</p>
-                            </span>                         
-                        </span>                         
-                    </a>
+                <a href="#" class="btn">Explore Full Dataset</a>
+            </section>
+        </div>
+        
+        <div class="container">
+            <section class="content-section">
+                <h2>How to Evaluate Efficiency</h2>
+                <div class="evaluation-methods">
+                    <div class="method">
+                        <div class="method-icon">📊</div>
+                        <h3>Discharge Rate</h3>
+                        <p>Measuring patient throughput while maintaining care quality standards and readmission benchmarks.</p>
+                    </div>
+                    <div class="method">
+                        <div class="method-icon">🏥</div>
+                        <h3>Severity Adjustment</h3>
+                        <p>Case-mix adjusted comparisons that account for differences in patient acuity levels.</p>
+                    </div>
+                    <div class="method">
+                        <div class="method-icon">💰</div>
+                        <h3>Resource Utilization</h3>
+                        <p>Analyzing cost-per-case efficiency metrics and operational expenditure ratios.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/hospital_bed.jpg" class="img-responsive rounded">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Profitability</h5>
-                                <p class="font-weight-normal">xxx</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of Analysis section -->
-
-    <!-- section -->
-    <section class="section-sm bg-primary">
-        <!-- container -->
-        <div class="container text-center text-sm-left">
-            <!-- row -->
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">Source</h6>
-                    <p class="m-0 text-light">Github</p>
-                    <p class="m-0 text-light">Tableau</p>
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of section -->
+            </section>
+        </div>
+    </main>
     
-    <!-- section -->
-    <section class="section-sm bg-primary">
-        <!-- container -->
-        <div class="container text-center text-sm-left">
-            <!-- row -->
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">Team's Member</h6>
-                    <a href="https://www.linkedin.com/in/member1" target="_blank">Member 1 Name</a>
-                    <a href="https://www.linkedin.com/in/member1" target="_blank">Member 2 Name</a>
-                    <a href="https://www.linkedin.com/in/member1" target="_blank">Member 3 Name</a>
-                    <a href="https://www.linkedin.com/in/member1" target="_blank">Member 4 Name</a>
-                </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of section -->
-    
-
-    <h2>Background of Project</h2>
-    <p>This is a 24-hour project for the 6th DubsTech Datathon 2025, held at the University of Washington.</p>
-
-    <h2>Main Question</h2>
-    <p>What metrics can best evaluate and improve efficiency in hospitals?</p>
-
-    <h2>Summary</h2>
-    <p>[Write your brief summary here about key findings, methods, or tools used.]</p>
-
-    <h2>Analysis</h2>
-    <h3>Overview</h3>
-    <p>[Write a few paragraphs or bullet points describing your approach, datasets used, challenges, etc.]</p>
-
-    <!-- Embed your Tableau visualization -->
-    <div class="tableauPlaceholder" id="viz1684597100000" style="width: 100%; height: 600px;">
-        <object class="tableauViz" width="100%" height="600px" style="display:none;">
-            <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-            <param name="embed_code_version" value="3" />
-            <param name="path" value="YOUR_TABLEAU_PATH_HERE" />
-            <param name="toolbar" value="yes" />
-        </object>
-    </div>
-    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-
-    <h2>Source Files</h2>
-    <div class="links">
-        <a href="https://github.com/YOUR_REPO_LINK" target="_blank">GitHub Repository</a>
-        <a href="https://public.tableau.com/app/profile/YOUR_USERNAME/viz/YOUR_VIZ_NAME" target="_blank">Tableau Public</a>
-    </div>
-
+    <footer>
+        <div class="container" style="background-color: transparent; box-shadow: none; background-image: none;">
+            <p>&copy; 2025 NY Hospitals Efficiency Analysis. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
