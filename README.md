@@ -19,9 +19,9 @@ Our primary objective is to uncover actionable insights into hospital performanc
 2. Convert columns into correct data type
 3. Aggregated duplicate rows by recalculated mean and median costs and charges
 4. Generated calculated fields including: 
-  4.1 Profitability = (Mean Charge - Mean Cost) / Mean Charge Mean
-  4.2 Profit = (Mean Charge - Mean Cost) 
-  4.3 Severity Weighted Score = (1 × Minor Discharges + 2 × Moderate Discharges + 3 × Major Discharges + 4 × Extreme Discharges) / Total Discharges
+    - Profitability = (Mean Charge - Mean Cost) / Mean Charge Mean
+    - Profit = (Mean Charge - Mean Cost) 
+    - Severity Weighted Score = (1 × Minor Discharges + 2 × Moderate Discharges + 3 × Major Discharges + 4 × Extreme Discharges) / Total Discharges
 5. Merge with external location data (hospital's latitude and longitude)
 
 ## 👩🏻‍🍳 Metric Development:
