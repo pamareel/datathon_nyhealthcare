@@ -36,7 +36,7 @@ Our primary objective is to uncover actionable insights into hospital performanc
 
 ## Other Resources Link
 - [Python for Cleaning Data](https://github.com/pamareel/pamareel.github.io/blob/main/Datathon_2025.ipynb)
-- [Tableau](https://public.tableau.com/views/NYHospitalEfficiencyAnalysis/Trend?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- [Tableau](https://public.tableau.com/views/NYHospitalEfficiencyAnalysis/DischargesbySeverity?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
 **This project is part of 6th DubsTech Datathon 2025, at University of Washington.*
