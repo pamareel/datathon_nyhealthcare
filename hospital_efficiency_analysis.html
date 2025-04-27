@@ -168,7 +168,7 @@
         
         /* Analysis Section */
         .analysis-section {
-            margin-top: 40px;
+            margin-top: 20px;
         }
         
         .analysis-grid {
@@ -294,29 +294,8 @@
         </div>
         
         <div class="container">
-            <section class="content-section">
-                <h2 style="margin-top: 0;">How to Evaluate Efficiency</h2>
-                <div class="evaluation-methods">
-                    <div class="method">
-                        <div class="method-icon">📊</div>
-                        <h3>Discharge Rate</h3>
-                        <p>Measuring patient throughput while maintaining care quality standards and readmission benchmarks.</p>
-                    </div>
-                    <div class="method">
-                        <div class="method-icon">🏥</div>
-                        <h3>Severity Adjustment</h3>
-                        <p>Case-mix adjusted comparisons that account for differences in patient acuity levels.</p>
-                    </div>
-                    <div class="method">
-                        <div class="method-icon">💰</div>
-                        <h3>Resource Utilization</h3>
-                        <p>Analyzing cost-per-case efficiency metrics and operational expenditure ratios.</p>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="analysis-section">
-                <h2>Discharge Rate Analysis</h2>
+            <section class="analysis-section" style="padding: 0px; margin-top: 0px;">
+                <h2 style="margin: 0px; padding: 0px">Overview</h2>
                 <div class="analysis-grid">
                     <div class="analysis-item">
                         <h3>Discharge Rate Trend</h3>
@@ -324,7 +303,53 @@
                             <!-- You can add another Tableau visualization here -->
                             <div class="image-placeholder" style="height: 300px;">
                                 [Tableau Visualization: Trend over Time]
+                            
+                                <div class='tableauPlaceholder' id='viz1745723745354' style='position: relative; width: 100%;'>
+                                    <noscript>
+                                        <a href='#'>
+                                            <img alt=' ' src='https://public.tableau.com/static/images/Ho/HowtowinNWTLottery/D1Howtowin/1_rss.png' style='border: none; width: 100%;' />
+                                        </a>
+                                    </noscript>
+                                    <object class='tableauViz' style='display:none;'>
+                                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                        <param name='embed_code_version' value='3' />
+                                        <param name='site_root' value='' />
+                                        <param name='name' value='HowtowinNWTLottery/D1Howtowin' />
+                                        <param name='tabs' value='yes' />
+                                        <param name='toolbar' value='yes' />
+                                        <param name='static_image' value='https://public.tableau.com/static/images/Ho/HowtowinNWTLottery/D1Howtowin/1.png' />
+                                        <param name='animate_transition' value='yes' />
+                                        <param name='display_static_image' value='yes' />
+                                        <param name='display_spinner' value='yes' />
+                                        <param name='display_overlay' value='yes' />
+                                        <param name='display_count' value='yes' />
+                                        <param name='language' value='en-GB' />
+                                    </object>
+                                </div>
+                                <script type='text/javascript'>
+                                    var divElement = document.getElementById('viz1745723745354');
+                                    var vizElement = divElement.getElementsByTagName('object')[0];
+                                    if (divElement.offsetWidth > 800) {
+                                        vizElement.style.minWidth = '1000px';
+                                        vizElement.style.maxWidth = '100%';
+                                        vizElement.style.minHeight = '850px';
+                                        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+                                    } else if (divElement.offsetWidth > 500) {
+                                        vizElement.style.minWidth = '1000px';
+                                        vizElement.style.maxWidth = '100%';
+                                        vizElement.style.minHeight = '850px';
+                                        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+                                    } else {
+                                        vizElement.style.width = '100%';
+                                        vizElement.style.minHeight = '1900px';
+                                        vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px';
+                                    }
+                                    var scriptElement = document.createElement('script');
+                                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                                </script>
                             </div>
+                            
                         </div>
                         <p>Analysis of discharge rate trends across different hospital systems.</p>
                     </div>
@@ -360,69 +385,82 @@
                     </div>
                 </div>
             </section>
+
+            <section class="content-section" style="margin-top: 10px;">
+                <h2 style="margin-top: 0;">How to Evaluate Efficiency</h2>
+                <div class="evaluation-methods">
+                    <div class="method">
+                        <div class="method-icon">📊</div>
+                        <h3>Discharge Volume</h3>
+                        <p>to measure the rate of hospital activity</p>
+                    </div>
+                    <div class="method">
+                        <div class="method-icon">🏥</div>
+                        <h3>Severity Level</h3>
+                        <p>to assess the complexity of patient conditions, as it affects the hospital\'s workload and resource usage.</p>
+                    </div>
+                    <div class="method">
+                        <div class="method-icon">💰</div>
+                        <h3>Profitability</h3>
+                        <p>to assess financial performance, we use the Charge-Cost ratio</p>
+                    </div>
+                </div>
+                <p>By multiplying the discharge volume by the <em>severity level</em> and dividing by the total number of <em>discharges</em>, we obtain a <span style="font-weight: bold; color: lightcoral;">severity-weighted score</span>. This score helps us evaluate the relative severity of the cases handled by the hospital.</p>
+                <p>Not only is physical performance assessed, but financial performance is also considered. We combine the severity-weighted score <span style="font-weight: bold; color: lightcoral;">with the profitability ratio</span> to determine the overall efficiency ranking, identifying which hospital performs best in terms of efficiency.</p>
+            </section>
+            
+            <section class="analysis-section" style="margin-top: 10px;">
+                <h2>Who rank first?</h2>
+                <div class="analysis-grid">
+                    <div class="analysis-item">
+                        <h3>Top Performing Hospitals</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Top 5 Hospitals]
+                            </div>
+                        </div>
+                        <p>Identifying the most efficient hospitals based on discharge metrics.</p>
+                    </div>
+                    <div class="analysis-item">
+                        <h3>Worst Performing Hospitals</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Top 5 Hospitals]
+                            </div>
+                        </div>
+                        <p>Identifying the most efficient hospitals based on discharge metrics.</p>
+                    </div>
+                    <div class="analysis-item">
+                        <h3>Improvement Opportunities</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Bottom 5 Hospitals]
+                            </div>
+                        </div>
+                        <p>Hospitals with the greatest opportunities for discharge process improvement.</p>
+                    </div>
+                </div>
+            </section>
         </div>
         <div class="container">
             <section class="content-section" style="padding:0px">
-                <h2 style="margin-top: 0;">Data Source</h2>
-                <div class="tableau-container">
-                    <div class='tableauPlaceholder' id='viz1745723745354' style='position: relative; width: 100%;'>
-                        <noscript>
-                            <a href='#'>
-                                <img alt=' ' src='https://public.tableau.com/static/images/Ho/HowtowinNWTLottery/D1Howtowin/1_rss.png' style='border: none; width: 100%;' />
-                            </a>
-                        </noscript>
-                        <object class='tableauViz' style='display:none;'>
-                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                            <param name='embed_code_version' value='3' />
-                            <param name='site_root' value='' />
-                            <param name='name' value='HowtowinNWTLottery/D1Howtowin' />
-                            <param name='tabs' value='yes' />
-                            <param name='toolbar' value='yes' />
-                            <param name='static_image' value='https://public.tableau.com/static/images/Ho/HowtowinNWTLottery/D1Howtowin/1.png' />
-                            <param name='animate_transition' value='yes' />
-                            <param name='display_static_image' value='yes' />
-                            <param name='display_spinner' value='yes' />
-                            <param name='display_overlay' value='yes' />
-                            <param name='display_count' value='yes' />
-                            <param name='language' value='en-GB' />
-                        </object>
-                    </div>
-                    <script type='text/javascript'>
-                        var divElement = document.getElementById('viz1745723745354');
-                        var vizElement = divElement.getElementsByTagName('object')[0];
-                        if (divElement.offsetWidth > 800) {
-                            vizElement.style.minWidth = '1000px';
-                            vizElement.style.maxWidth = '100%';
-                            vizElement.style.minHeight = '850px';
-                            vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
-                        } else if (divElement.offsetWidth > 500) {
-                            vizElement.style.minWidth = '1000px';
-                            vizElement.style.maxWidth = '100%';
-                            vizElement.style.minHeight = '850px';
-                            vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
-                        } else {
-                            vizElement.style.width = '100%';
-                            vizElement.style.minHeight = '1900px';
-                            vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px';
-                        }
-                        var scriptElement = document.createElement('script');
-                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                    </script>
-                </div>
-                <a href="#" class="btn">Explore Full Dataset</a>
+                <h2 style="margin-top: 0;">Summary</h2>
+                
             </section>
         </div>    
         <div class="container">
-            <section class="team-section">
-                <h2>Source</h2>
+            <section class="team-section" style="margin: 0px;">
+                <h2 style="margin: 0px;">Source</h2>
                 <div class="source_list">
-                    <div class="source-list">
-                        <h3>⚙️</h3>
+                    <div class="source-list" style="background-color:black;">
+                        <div class="method-icon" style="background-color:rgba(39, 39, 39, 0.923);">⚙️</div>
                         <a href="https://www.linkedin.com/" target="_blank" style="color:white;">Github Repo</a>
                     </div>
-                    <div class="source-list">
-                        <h3>📊</h3>
+                    <div class="source-list" style="background-color:black;">
+                        <div class="method-icon" style="background-color:rgba(39, 39, 39, 0.923);">📊</div>
                         <a href="https://www.linkedin.com/" target="_blank" style="color:white;">Tableau</a>
                     </div>
                 </div>
