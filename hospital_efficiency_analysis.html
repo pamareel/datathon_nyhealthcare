@@ -23,7 +23,7 @@
         
         /* Header Font Styles */
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Newsreader', serif;
+            font-family: 'Arial', serif;
             font-weight: 500; /* Medium weight for better readability */
             font-style: normal;
         }
@@ -59,7 +59,7 @@
         }
 
         .subtitle {
-            font-family: 'Newsreader', serif;
+            font-family: 'Arial', serif;
             font-weight: 400; /* Regular weight */
             font-size: 1.2rem;
             margin-top: 10px;
@@ -196,7 +196,7 @@
             text-align: center;
         }
         
-        .team-members {
+        .source_list {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -204,27 +204,27 @@
             margin-top: 20px;
         }
         
-        .team-member {
-            background-color: rgba(255, 255, 255, 0.8);
+        .source-list {
+            background-color: rgba(115, 112, 156, 0.608);
             padding: 20px;
             border-radius: 8px;
             width: 200px;
             transition: all 0.3s;
         }
         
-        .team-member:hover {
+        .source-list:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
-        .team-member a {
+        .source-list a {
             color: #005b96;
             text-decoration: none;
             display: inline-block;
             margin-top: 10px;
         }
         
-        .team-member a:hover {
+        .source-list a:hover {
             text-decoration: underline;
         }
         
@@ -267,10 +267,15 @@
 <body>
     <!-- Your existing HTML content remains the same -->
     <header>
-        <div class="container" style="background-color: transparent; box-shadow: none; margin-top: 0; background-image: none;">
+        <div class="container" style="background-color: transparent; box-shadow: none; margin-top: 0; margin-bottom: 0; background-image: none;">
+            <div class="subtitle"><em>6th Datathon DubsTech 2025</em></div>
             <h1>NY HOSPITALS EFFICIENCY ANALYSIS</h1>
-            <div class="subtitle">~6th Datathon DubsTech 2025~</div>
-            <div class="data-source">Data Source: <a href="https://health.data.ny.gov/Health/Hospital-Inpatient-Discharges-SPARCS-De-Identified/7dtz-qxmr/about_data" target="_blank">Hospital Inpatient Discharges</a></div>
+            <p>by 
+                <a href="https://www.linkedin.com/" target="_blank" style="color: white;">Anna Tsai</a>
+                , <a href="https://www.linkedin.com/" target="_blank" style="color: white;">Iris</a>
+                , <a href="https://www.linkedin.com/in/pamaree-laowong" target="_blank" style="color: white;">Pamaree Laowong</a>
+                , <a href="https://www.linkedin.com/in/pamaree-laowong" target="_blank" style="color: white;">Peggy Chen</a>
+            </p>
         </div>
     </header>
     
@@ -278,70 +283,19 @@
     
     <main>
         <div class="container">
-            <section class="content-section">
-                <h2>Intro</h2>
-                <p>With over 1.19 million rows and 14 detailed columns, this analysis examines the efficiency of hospitals in New York State using data from 2009 to 2021, sourced from the Statewide Planning and Research Cooperative System (SPARCS). We evaluate key performance indicators across multiple dimensions to identify best practices and uncover the factors that contribute to hospital efficiency.</p>
-                <h4><em>Our objective is to develop a metric to rank and categorize hospital facilities based on their performance.</em></h4>
+            <section class="content-section" style="padding:0px">
+                <h2 style="margin-top: 0;">Intro</h2>
+                <p>With over 1.19 million rows and 14 detailed columns, this analysis examines the efficiency of hospitals in New York State using data from 2009 to 2021, sourced from the <em>Statewide Planning and Research Cooperative System</em> (SPARCS). We evaluate key performance indicators across multiple dimensions to identify best practices and uncover the factors that contribute to hospital efficiency.</p>
+                <section class="content-section" style="border-radius: 8px; background-color: lightgrey; text-align: center; padding: 2px;">
+                    <h3><em>"Our objective is to develop a metric to rank and categorize hospital facilities based on their performance"</em></h3>
+                </section>
                 <p>The methodology integrates quantitative metrics with qualitative assessments to provide a comprehensive evaluation of hospital operations, while accounting for variations in patient discharges and service offerings.</p>
             </section>
         </div>
         
         <div class="container">
             <section class="content-section">
-                <h2>Data Source</h2>
-                <div class="tableau-container">
-                    <div class='tableauPlaceholder' id='viz1745723745354' style='position: relative; width: 100%;'>
-                        <noscript>
-                            <a href='#'>
-                                <img alt=' ' src='https://public.tableau.com/static/images/Ho/HowtowinNWTLottery/D1Howtowin/1_rss.png' style='border: none; width: 100%;' />
-                            </a>
-                        </noscript>
-                        <object class='tableauViz' style='display:none;'>
-                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                            <param name='embed_code_version' value='3' />
-                            <param name='site_root' value='' />
-                            <param name='name' value='HowtowinNWTLottery/D1Howtowin' />
-                            <param name='tabs' value='yes' />
-                            <param name='toolbar' value='yes' />
-                            <param name='static_image' value='https://public.tableau.com/static/images/Ho/HowtowinNWTLottery/D1Howtowin/1.png' />
-                            <param name='animate_transition' value='yes' />
-                            <param name='display_static_image' value='yes' />
-                            <param name='display_spinner' value='yes' />
-                            <param name='display_overlay' value='yes' />
-                            <param name='display_count' value='yes' />
-                            <param name='language' value='en-GB' />
-                        </object>
-                    </div>
-                    <script type='text/javascript'>
-                        var divElement = document.getElementById('viz1745723745354');
-                        var vizElement = divElement.getElementsByTagName('object')[0];
-                        if (divElement.offsetWidth > 800) {
-                            vizElement.style.minWidth = '1000px';
-                            vizElement.style.maxWidth = '100%';
-                            vizElement.style.minHeight = '850px';
-                            vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
-                        } else if (divElement.offsetWidth > 500) {
-                            vizElement.style.minWidth = '1000px';
-                            vizElement.style.maxWidth = '100%';
-                            vizElement.style.minHeight = '850px';
-                            vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
-                        } else {
-                            vizElement.style.width = '100%';
-                            vizElement.style.minHeight = '1900px';
-                            vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px';
-                        }
-                        var scriptElement = document.createElement('script');
-                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                    </script>
-                </div>
-                <a href="#" class="btn">Explore Full Dataset</a>
-            </section>
-        </div>
-        
-        <div class="container">
-            <section class="content-section">
-                <h2>How to Evaluate Efficiency</h2>
+                <h2 style="margin-top: 0;">How to Evaluate Efficiency</h2>
                 <div class="evaluation-methods">
                     <div class="method">
                         <div class="method-icon">📊</div>
@@ -406,29 +360,76 @@
                     </div>
                 </div>
             </section>
-            
+        </div>
+        <div class="container">
+            <section class="content-section" style="padding:0px">
+                <h2 style="margin-top: 0;">Data Source</h2>
+                <div class="tableau-container">
+                    <div class='tableauPlaceholder' id='viz1745723745354' style='position: relative; width: 100%;'>
+                        <noscript>
+                            <a href='#'>
+                                <img alt=' ' src='https://public.tableau.com/static/images/Ho/HowtowinNWTLottery/D1Howtowin/1_rss.png' style='border: none; width: 100%;' />
+                            </a>
+                        </noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='HowtowinNWTLottery/D1Howtowin' />
+                            <param name='tabs' value='yes' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https://public.tableau.com/static/images/Ho/HowtowinNWTLottery/D1Howtowin/1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-GB' />
+                        </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1745723745354');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.minWidth = '1000px';
+                            vizElement.style.maxWidth = '100%';
+                            vizElement.style.minHeight = '850px';
+                            vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.minWidth = '1000px';
+                            vizElement.style.maxWidth = '100%';
+                            vizElement.style.minHeight = '850px';
+                            vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.minHeight = '1900px';
+                            vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+                <a href="#" class="btn">Explore Full Dataset</a>
+            </section>
+        </div>    
+        <div class="container">
             <section class="team-section">
-                <h2>Project Team</h2>
-                <div class="team-members">
-                    <div class="team-member">
-                        <h3>Team Member 1</h3>
-                        <p>Data Analyst</p>
-                        <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a>
+                <h2>Source</h2>
+                <div class="source_list">
+                    <div class="source-list">
+                        <h3>⚙️</h3>
+                        <a href="https://www.linkedin.com/" target="_blank" style="color:white;">Github Repo</a>
                     </div>
-                    <div class="team-member">
-                        <h3>Team Member 2</h3>
-                        <p>Healthcare Specialist</p>
-                        <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a>
-                    </div>
-                    <div class="team-member">
-                        <h3>Team Member 3</h3>
-                        <p>Visualization Expert</p>
-                        <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a>
+                    <div class="source-list">
+                        <h3>📊</h3>
+                        <a href="https://www.linkedin.com/" target="_blank" style="color:white;">Tableau</a>
                     </div>
                 </div>
             </section>
         </div>
     </main>
+
     
     <footer>
         <div class="container" style="background-color: transparent; box-shadow: none; background-image: none;">
