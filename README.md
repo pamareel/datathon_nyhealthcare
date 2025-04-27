@@ -35,7 +35,7 @@ Our primary objective is to uncover actionable insights into hospital performanc
 - HTML for document analysis report
 
 ## Other Resources Link
-- [Tableau]()
+- [Tableau](https://public.tableau.com/views/NYHospitalEfficiencyAnalysis/Trend?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
 **This project is part of 6th DubsTech Datathon 2025, at University of Washington.*
