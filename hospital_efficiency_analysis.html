@@ -56,6 +56,7 @@
             font-size: 2.5rem;
             letter-spacing: 1px;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
         }
 
         .subtitle {
@@ -79,11 +80,12 @@
         }
         
         h2 {
-            color: #005b96;
+            color: rgba(51, 44, 168);
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid rgba(0, 91, 150, 0.3);
+            border-bottom: 2px solid rgba(51, 44, 168, 0.3);
             font-size: 1.8rem;
+            font-weight: bold;
         }
         
         .tableau-container {
@@ -94,7 +96,7 @@
         
         .btn {
             display: inline-block;
-            background-color: #005b96;
+            background-color: rgba(51, 44, 168);
             color: white;
             padding: 10px 20px;
             text-decoration: none;
@@ -106,7 +108,7 @@
         }
         
         .btn:hover {
-            background-color: #003d66;
+            background-color: rgb(13, 9, 96);
             transform: translateY(-2px);
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
         }
@@ -152,7 +154,7 @@
             justify-content: center;
             margin: 0 auto 15px;
             font-size: 2rem;
-            color: #005b96;
+            color: rgba(51, 44, 168);
             transition: all 0.3s;
         }
         
@@ -162,7 +164,7 @@
         }
         
         .method h3 {
-            color: #005b96;
+            color: rgba(51, 44, 168);
             margin-bottom: 10px;
         }
         
@@ -186,8 +188,9 @@
         }
         
         .analysis-item h3 {
-            color: #005b96;
+            color: rgb(0, 0, 0);
             margin-top: 0;
+            font-weight: bold;
         }
         
         /* Team Section */
@@ -218,7 +221,7 @@
         }
         
         .source-list a {
-            color: #005b96;
+            color: rgba(51, 44, 168);
             text-decoration: none;
             display: inline-block;
             margin-top: 10px;
@@ -285,25 +288,51 @@
         <div class="container">
             <section class="content-section" style="padding:0px">
                 <h2 style="margin-top: 0;">Intro</h2>
-                <p>With over 1.19 million rows and 14 detailed columns, this analysis examines the efficiency of hospitals in New York State using data from 2009 to 2021, sourced from the <em>Statewide Planning and Research Cooperative System</em> (SPARCS). We evaluate key performance indicators across multiple dimensions to identify best practices and uncover the factors that contribute to hospital efficiency.</p>
+                <p>This project aims to analyze hospital discharge volumes, financial performance, illness severity impacts, and geographic trends to uncover patterns in patient care costs, hospital efficiency, and patient outcomes across New York State from 2009 to 2017, and 2021.</p>
+                <p>With over 1.19 million rows and 14 detailed columns, we evaluate key performance indicators across multiple dimensions to identify best practices and uncover the factors that contribute to hospital efficiency.</p>
                 <section class="content-section" style="border-radius: 8px; background-color: lightgrey; text-align: center; padding: 2px;">
-                    <h3><em>"Our objective is to develop a metric to rank and categorize hospital facilities based on their performance"</em></h3>
+                    <h3><em><span style="font-weight: bold;">"Our objective is to uncover actionable insights into </span><span style="font-weight: bold; color: rgba(51, 44, 168)">hospital performance across New York State</span><span style="font-weight: bold;">"</span></em></h3>
                 </section>
-                <p>The methodology integrates quantitative metrics with qualitative assessments to provide a comprehensive evaluation of hospital operations, while accounting for variations in patient discharges and service offerings.</p>
+                <p style="margin-bottom: 3px;">The areas we focus on are:</p>
+                <p style="margin: 0px;">1. Analyzing hospital <span style="font-weight: bold;">discharge volume trends</span></p>
+                <p style="margin: 0px;">2. <span style="font-weight: bold;">Identifying</span> hospitals with <span style="font-weight: bold;">exceptional financial performance</span> (both profitable and unprofitable)</p>
+                <p style="margin: 0px;">3. Examining the <span style="font-weight: bold;">relationship</span> between illness <span style="font-weight: bold;">severity</span> and healthcare <span style="font-weight: bold;">costs</span></p>
+                <p style="margin: 0px;">4. Mapping <span style="font-weight: bold;">geographic differences</span> in patient care and financial metrics</p>
+                <p style="margin: 0px;">5. <span style="font-weight: bold;">Ranking hospitals</span> based on custom metrics such as profitability and complexity handling</p>
             </section>
         </div>
         
         <div class="container">
-            <section class="analysis-section" style="padding: 0px; margin-top: 0px;">
-                <h2 style="margin: 0px; padding: 0px">Overview</h2>
+            <section class="content-section" style="padding: 0px;">
+                <h2 style="margin-top: 0;">How to Evaluate Performance</h2>
+                <div class="evaluation-methods">
+                    <div class="method">
+                        <div class="method-icon">📊</div>
+                        <h3>Discharge Volume</h3>
+                        <p>to measure the rate of hospital activity</p>
+                    </div>
+                    <div class="method">
+                        <div class="method-icon">🏥</div>
+                        <h3>Severity Level</h3>
+                        <p>to assess the complexity of patient conditions, as it affects the hospital's workload and resource usage.</p>
+                    </div>
+                    <div class="method">
+                        <div class="method-icon">💰</div>
+                        <h3>Profitability</h3>
+                        <p>to evaluate financial health</p>
+                    </div>
+                </div>
+                <p style="margin-top:0px">By using these three areas to assess performance, not only is physical performance evaluated (<em>discharge</em> and <em>severity</em>), but financial performance is also considered. We can then identify which hospital performs best in terms of efficiency.</p>
+            </section>
+
+            <section class="analysis-section" style="padding: 0px; margin-top: 20px;">
+                <h2 style="margin: 0px; padding: 0px">1️⃣ Overall Hospital Activity & Volume Trends</h2>
                 <div class="analysis-grid">
                     <div class="analysis-item">
-                        <h3>Discharge Rate Trend</h3>
+                        <h3>Overall Discharge Trend</h3>
                         <div class="tableau-container">
                             <!-- You can add another Tableau visualization here -->
                             <div class="image-placeholder" style="height: 300px;">
-                                [Tableau Visualization: Trend over Time]
-                            
                                 <div class='tableauPlaceholder' id='viz1745723745354' style='position: relative; width: 100%;'>
                                     <noscript>
                                         <a href='#'>
@@ -349,68 +378,128 @@
                                     vizElement.parentNode.insertBefore(scriptElement, vizElement);
                                 </script>
                             </div>
-                            
                         </div>
-                        <p>Analysis of discharge rate trends across different hospital systems.</p>
+                        <p>XXXXXXX</p>
                     </div>
                     <div class="analysis-item">
-                        <h3>Top Performing Hospitals</h3>
+                        <h3>Medical and Surgurical Discharge Trend</h3>
                         <div class="tableau-container">
                             <!-- You can add another Tableau visualization here -->
                             <div class="image-placeholder" style="height: 300px;">
-                                [Tableau Visualization: Top 5 Hospitals]
+                                [Tableau Visualization: Trends in discharges over time, broken down by medical vs. surgical cases and illness severity]
                             </div>
                         </div>
-                        <p>Identifying the most efficient hospitals based on discharge metrics.</p>
+                        <p>XXXXXX</p>
                     </div>
                     <div class="analysis-item">
-                        <h3>Improvement Opportunities</h3>
+                        <h3>Where is discharge density located?</h3>
                         <div class="tableau-container">
                             <!-- You can add another Tableau visualization here -->
                             <div class="image-placeholder" style="height: 300px;">
-                                [Tableau Visualization: Bottom 5 Hospitals]
+                                [Tableau Visualization: Geographic mapping of hospitals categorized by discharge volume]
                             </div>
                         </div>
-                        <p>Hospitals with the greatest opportunities for discharge process improvement.</p>
+                        <p>XXXXXX</p>
                     </div>
                     <div class="analysis-item">
-                        <h3>Efficiency Benchmarks</h3>
+                        <h3>Who has unstable discharge pattern?</h3>
                         <div class="tableau-container">
                             <!-- You can add another Tableau visualization here -->
                             <div class="image-placeholder" style="height: 300px;">
-                                [Tableau Visualization: Benchmark Comparisons]
+                                [Tableau Visualization: Identification of hospitals with unstable discharge patterns (i.e., large fluctuations)]
                             </div>
                         </div>
-                        <p>Comparing performance against regional and national benchmarks.</p>
+                        <p>XXXXXX</p>
                     </div>
                 </div>
             </section>
 
-            <section class="content-section" style="margin-top: 10px;">
-                <h2 style="margin-top: 0;">How to Evaluate Efficiency</h2>
-                <div class="evaluation-methods">
-                    <div class="method">
-                        <div class="method-icon">📊</div>
-                        <h3>Discharge Volume</h3>
-                        <p>to measure the rate of hospital activity</p>
+            <section class="analysis-section" style="padding: 0px; margin-top: 0px;">
+                <h2 style="margin-top: 30px; padding: 0px">2️⃣ Evaluating Financial Health</h2>
+                <div class="analysis-grid">
+                    <div class="analysis-item">
+                        <h3>Overall Charges and Costs Trend</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Trends in mean costs and mean charges over time]
+                            </div>
+                        </div>
+                        <p>XXXXXXX</p>
                     </div>
-                    <div class="method">
-                        <div class="method-icon">🏥</div>
-                        <h3>Severity Level</h3>
-                        <p>to assess the complexity of patient conditions, as it affects the hospital\'s workload and resource usage.</p>
+                    <div class="analysis-item">
+                        <h3>Who rank best or worst in Charges and Costs?</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Ranking hospitals by mean charges and costs]
+                            </div>
+                        </div>
+                        <p>XXXXXX</p>
                     </div>
-                    <div class="method">
-                        <div class="method-icon">💰</div>
-                        <h3>Profitability</h3>
-                        <p>to assess financial performance, we use the Charge-Cost ratio</p>
+                    <div class="analysis-item">
+                        <h3>Who face Losses vs. high Profits?</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Identifying hospitals operating at a financial loss vs those achieving high profit margins]
+                            </div>
+                        </div>
+                        <p>XXXXXX</p>
                     </div>
                 </div>
-                <p>By multiplying the discharge volume by the <em>severity level</em> and dividing by the total number of <em>discharges</em>, we obtain a <span style="font-weight: bold; color: lightcoral;">severity-weighted score</span>. This score helps us evaluate the relative severity of the cases handled by the hospital.</p>
-                <p>Not only is physical performance assessed, but financial performance is also considered. We combine the severity-weighted score <span style="font-weight: bold; color: lightcoral;">with the profitability ratio</span> to determine the overall efficiency ranking, identifying which hospital performs best in terms of efficiency.</p>
+            </section>
+
+            <section class="analysis-section" style="padding: 0px; margin-top: 0px;">
+                <h2 style="margin-top: 30px; padding: 0px">3️⃣ Impact of Diagnosis Type and Severity of Illness</h2>
+                <div class="analysis-grid">
+                    <div class="analysis-item">
+                        <h3>Which Diagnoses lead to the most Discharges?</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Distribution of discharges by APR DRG Code]
+                            </div>
+                        </div>
+                        <p>XXXXXXX</p>
+                        <p style="padding: 0px; margin: 0px; font-size: small;"><em>*All Patient Refined Diagnosis Related Groups (APR DRG)</em></p>
+                    </div>
+                    <div class="analysis-item">
+                        <h3>Does Severity impact the Discharge volume?</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Distribution of discharges by Severity of Illness (Minor, Moderate, Major, Extreme)]
+                            </div>
+                        </div>
+                        <p>XXXXXX</p>
+                    </div>
+                    <div class="analysis-item">
+                        <h3>Do Costs and Charges increase with Severity?</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Analyzing whether costs and charges increase with severity, Visualizing mean charge and cost by severity level]
+                            </div>
+                        </div>
+                        <p>XXXXXX</p>
+                    </div>
+                    <div class="analysis-item">
+                        <h3>Which areas have the highest Severity-Weighted* Discharge scores?</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Mapping hospitals by severity-weighted discharge scores]
+                            </div>
+                        </div>
+                        <p>XXXXXX</p>
+                        <p style="font-size: small;">*To obtain a <em>severity-weighted score</em>, we multiply the <em>discharge volume</em> by the <em>severity level</em> and divide by the total number of <em>discharges</em>. This score helps us evaluate the relative severity of the cases handled by the hospital.</p>
+                    </div>
+                </div>
             </section>
             
             <section class="analysis-section" style="margin-top: 10px;">
-                <h2>Who rank first?</h2>
+                <h2>[Optional] Who rank first?</h2>
                 <div class="analysis-grid">
                     <div class="analysis-item">
                         <h3>Top Performing Hospitals</h3>
@@ -432,23 +521,17 @@
                         </div>
                         <p>Identifying the most efficient hospitals based on discharge metrics.</p>
                     </div>
-                    <div class="analysis-item">
-                        <h3>Improvement Opportunities</h3>
-                        <div class="tableau-container">
-                            <!-- You can add another Tableau visualization here -->
-                            <div class="image-placeholder" style="height: 300px;">
-                                [Tableau Visualization: Bottom 5 Hospitals]
-                            </div>
-                        </div>
-                        <p>Hospitals with the greatest opportunities for discharge process improvement.</p>
-                    </div>
                 </div>
             </section>
         </div>
         <div class="container">
             <section class="content-section" style="padding:0px">
-                <h2 style="margin-top: 0;">Summary</h2>
-                
+                <h2 style="margin-top: 0;">Key Findings</h2>
+                <p>1. Overall hospital discharge volumes have decreased slightly over time, especially for Medical, Minor and Moderate cases</p>
+                <p>2. Higher severity of illness is strongly correlated with higher mean charges and mean costs. This could be due to the complexity of treatment or the use of specialized equipment for healing.</p>
+                <p>3. Several hospitals exhibit unstable year-to-year discharge volumes</p>
+                <p>4. Profitability varies widely, with some hospitals consistently operating at a financial loss, and some of these have now permanently closed.</p>
+
             </section>
         </div>    
         <div class="container">
@@ -456,12 +539,16 @@
                 <h2 style="margin: 0px;">Source</h2>
                 <div class="source_list">
                     <div class="source-list" style="background-color:black;">
-                        <div class="method-icon" style="background-color:rgba(39, 39, 39, 0.923);">⚙️</div>
-                        <a href="https://www.linkedin.com/" target="_blank" style="color:white;">Github Repo</a>
+                        <div class="method-icon" style="background-color:rgba(39, 39, 39, 0.923); margin-bottom: 0px;">⚙️</div>
+                        <a href="https://www.linkedin.com/" target="_blank" style="color:white; font-weight: bold">Github Repo</a>
                     </div>
                     <div class="source-list" style="background-color:black;">
-                        <div class="method-icon" style="background-color:rgba(39, 39, 39, 0.923);">📊</div>
-                        <a href="https://www.linkedin.com/" target="_blank" style="color:white;">Tableau</a>
+                        <div class="method-icon" style="background-color:rgba(39, 39, 39, 0.923); margin-bottom: 0px;">📊</div>
+                        <a href="https://www.linkedin.com/" target="_blank" style="color:white; font-weight: bold">Tableau</a>
+                    </div>
+                    <div class="source-list" style="background-color:black;">
+                        <div class="method-icon" style="background-color:rgba(39, 39, 39, 0.923); margin-bottom: 0px;">🗂</div>
+                        <a href="https://health.data.ny.gov/Health/Hospital-Inpatient-Discharges-SPARCS-De-Identified/7dtz-qxmr/about_data" target="_blank" style="color:white; font-weight: bold;">Datasource</a>
                     </div>
                 </div>
             </section>
@@ -469,8 +556,8 @@
     </main>
 
     
-    <footer>
-        <div class="container" style="background-color: transparent; box-shadow: none; background-image: none;">
+    <footer style="margin:0px;">
+        <div class="container" style="padding:0px; margin-top:0px; background-color: transparent; box-shadow: none; background-image: none;">
             <p>&copy; 2025 NY Hospitals Efficiency Analysis. All rights reserved.</p>
         </div>
     </footer>
