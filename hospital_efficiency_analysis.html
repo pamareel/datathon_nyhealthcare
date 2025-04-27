@@ -171,10 +171,11 @@
         /* Analysis Section */
         .analysis-section {
             margin-top: 20px;
+            margin-bottom: 20px;
         }
         
         .analysis-grid {
-            display: grid;
+            /* display: grid; */
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             margin-top: 20px;
@@ -275,7 +276,7 @@
             <h1>NY HOSPITALS EFFICIENCY ANALYSIS</h1>
             <p>by 
                 <a href="https://www.linkedin.com/in/anna-tsai-949137185" target="_blank" style="color: white;">Anna Tsai</a>
-                , <a href="https://www.linkedin.com/in/iris-hsieh-mengjung" target="_blank" style="color: white;">Iri Hsieh</a>
+                , <a href="https://www.linkedin.com/iris-hsieh-mengjung" target="_blank" style="color: white;">Iris Hsieh</a>
                 , <a href="https://www.linkedin.com/in/pamaree-laowong" target="_blank" style="color: white;">Pamaree Laowong</a>
                 , <a href="https://www.linkedin.com/in/peiyu-chen8157" target="_blank" style="color: white;">PeiYu Chen</a>
             </p>
@@ -316,11 +317,14 @@
                         <div class="method-icon">🏥</div>
                         <h3>Severity Level</h3>
                         <p>to assess the complexity of patient conditions, as it affects the hospital's workload and resource usage.</p>
+                        <p style="font-size: x-small; text-align: center;">Severity Weighted Score = (1 × Minor Discharges + 2 × Moderate Discharges + 3 × Major Discharges + 4 × Extreme Discharges) / Total Discharges</p>
                     </div>
                     <div class="method">
                         <div class="method-icon">💰</div>
                         <h3>Profitability</h3>
                         <p>to evaluate financial health</p>
+                        <p style="font-size: x-small; text-align: center; margin-bottom:0px">Profit = (Mean Charge - Mean Cost)</p>
+                        <p style="font-size: x-small; text-align: center; margin-top:0px">Profitability = Profit / Mean Charge Mean</p>
                     </div>
                 </div>
                 <p style="margin-top:5px; margin-bottom: 0px;">By using these three areas to assess performance, not only is physical performance evaluated (<em>discharge</em> and <em>severity</em>), but financial performance is also considered. We can then identify which hospital performs best in terms of efficiency.</p>
@@ -331,9 +335,9 @@
                 <div class="analysis-grid">
                     <div class="analysis-item">
                         <h3>Overall Discharge Trend</h3>
-                        <div class="tableau-container">
+                        <div class="tableau-container" style="display: flex; justify-content: center; align-items: center">
                             <!-- You can add another Tableau visualization here -->
-                            <div class="image-placeholder" style="height: 300px;">
+                            <div class="image-placeholder" style="width:90%;">
                                 <div class='tableauPlaceholder' id='viz1745742601068' style='position: relative'>
                                     <noscript>
                                         <a href='#'>
@@ -360,9 +364,8 @@
                                     var divElement = document.getElementById('viz1745742601068');
                                     var vizElement = divElement.getElementsByTagName('object')[0];
                                     vizElement.style.width='100%';
-                                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                                    vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
                                     var scriptElement = document.createElement('script');
-                                    /* vizElement.innerHTML += `<param name="tabs" value="no">`; */
                                     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                                     vizElement.parentNode.insertBefore(scriptElement, vizElement);
                                 </script>
@@ -370,11 +373,11 @@
                         </div>
                         <p>XXXXXXX</p>
                     </div>
-                    <div class="analysis-item">
+                    <div class="analysis-item" style="margin-top: 20px;">
                         <h3>Medical and Surgurical Discharge Trend</h3>
-                        <div class="tableau-container">
+                        <div class="tableau-container" style="display: flex; justify-content: center; align-items: center">
                             <!-- You can add another Tableau visualization here -->
-                            <div class="image-placeholder" style="height: 300px;">
+                            <div class="image-placeholder" style="width: 90%;">
                                 <div class='tableauPlaceholder' id='viz1745743730573' style='position: relative'>
                                     <noscript>
                                         <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;DischargesbySurgicalcodeovertime&#47;1_rss.png' style='border: none' /></a>
@@ -398,7 +401,7 @@
                                 <script type='text/javascript'>
                                     var divElement = document.getElementById('viz1745743730573');
                                     var vizElement = divElement.getElementsByTagName('object')[0];
-                                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
                                     var scriptElement = document.createElement('script');
                                     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                                     vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -407,11 +410,11 @@
                         </div>
                         <p>XXXXXX</p>
                     </div>
-                    <div class="analysis-item">
+                    <div class="analysis-item" style="margin-top: 20px;">
                         <h3>Where is discharge density located?</h3>
-                        <div class="tableau-container">
+                        <div class="tableau-container" style="display: flex; justify-content: center; align-items: center">
                             <!-- You can add another Tableau visualization here -->
-                            <div class="image-placeholder" style="height: 300px;">
+                            <div class="image-placeholder" style="width: 90%;">
                                 <div class='tableauPlaceholder' id='viz1745746939688' style='position: relative'>
                                     <noscript>
                                         <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;QM&#47;QMPWYHQ54&#47;1_rss.png' style='border: none' /></a>
@@ -434,7 +437,7 @@
                                 <script type='text/javascript'>
                                     var divElement = document.getElementById('viz1745746939688');
                                     var vizElement = divElement.getElementsByTagName('object')[0];
-                                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
                                     var scriptElement = document.createElement('script');
                                     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                                     vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -443,16 +446,7 @@
                         </div>
                         <p>XXXXXX</p>
                     </div>
-                    <div class="analysis-item">
-                        <h3>Who has unstable discharge pattern?</h3>
-                        <div class="tableau-container">
-                            <!-- You can add another Tableau visualization here -->
-                            <div class="image-placeholder" style="height: 300px;">
-                                [Tableau Visualization: Identification of hospitals with unstable discharge patterns (i.e., large fluctuations)]
-                            </div>
-                        </div>
-                        <p>XXXXXX</p>
-                    </div>
+                    
                 </div>
             </section>
 
@@ -461,10 +455,10 @@
                 <div class="analysis-grid">
                     <div class="analysis-item">
                         <h3>Overall Charges and Costs Trend</h3>
-                        <div class="tableau-container">
+                        <div class="tableau-container" style="display: flex; justify-content: center; align-items: center">
                             <!-- You can add another Tableau visualization here -->
-                            <div class="image-placeholder" style="height: 300px;">
-                                <div class='tableauPlaceholder' id='viz1745747127136' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2D&#47;2DRSWNPCY&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;2DRSWNPCY' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2D&#47;2DRSWNPCY&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745747127136');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                            <div class="image-placeholder" style="width: 90%;">
+                                <div class='tableauPlaceholder' id='viz1745747127136' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2D&#47;2DRSWNPCY&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;2DRSWNPCY' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2D&#47;2DRSWNPCY&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745747127136');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.5)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                             </div>
                         </div>
                         <p>XXXXXXX</p>
@@ -472,19 +466,19 @@
                     <p></p>
                     <div class="analysis-item">
                         <h3>Who high Profits?</h3>
-                        <div class="tableau-container">
+                        <div class="tableau-container" style="display: flex; justify-content: center; align-items: center">
                             <!-- You can add another Tableau visualization here -->
-                            <div class="image-placeholder" style="height: 300px;">
-                                <div class='tableauPlaceholder' id='viz1745747468447' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;Top10Facility&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;Top10Facility&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745747468447');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                            <div class="image-placeholder" style="width: 90%;">
+                                <div class='tableauPlaceholder' id='viz1745747468447' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;Top10Facility&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;Top10Facility&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745747468447');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.5)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                             </div>
                         </div>
                         <p>XXXXXX</p>
                     </div>
                     <div class="analysis-item">
                         <h3>Who face Losses?</h3>
-                        <div class="tableau-container">
+                        <div class="tableau-container" style="display: flex; justify-content: center; align-items: center">
                             <!-- You can add another Tableau visualization here -->
-                            <div class="image-placeholder" style="height: 300px;">
+                            <div class="image-placeholder" style="width: 90%;">
                                 <div class='tableauPlaceholder' id='viz1745747631471' style='position: relative'>
                                     <noscript>
                                         <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;Bottom10Facility&#47;1_rss.png' style='border: none' /></a>
@@ -506,7 +500,7 @@
                                 <script type='text/javascript'> 
                                     var divElement = document.getElementById('viz1745747631471');
                                     var vizElement = divElement.getElementsByTagName('object')[0];
-                                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
                                     var scriptElement = document.createElement('script');
                                     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                                     vizElement.parentNode.insertBefore(scriptElement, vizElement); 
