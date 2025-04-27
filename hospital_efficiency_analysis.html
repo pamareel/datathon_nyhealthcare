@@ -14,8 +14,8 @@
             padding: 0;
             color: #333;
             line-height: 1.6;
-            background-color: #f9f9f9;
-            background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-color: #E8E8E8;
+            /* background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); */
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -29,7 +29,7 @@
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 30px;
             background-color: rgba(255, 255, 255, 0.9);
@@ -37,7 +37,7 @@
             border-radius: 8px;
             margin-top: 20px;
             margin-bottom: 20px;
-            background-image: url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            /* background-image: url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); */
             background-size: cover;
             background-position: center;
             background-blend-mode: overlay;
@@ -45,9 +45,9 @@
         
         /* Header Styles */
         header {
-            background-color: #332CA8;
+            background-color: rgba(51, 44, 168, 0.8);
             color: white;
-            padding: 40px 0;
+            padding: 30px 0;
             text-align: center;
         }
         
@@ -270,7 +270,7 @@
         <div class="container" style="background-color: transparent; box-shadow: none; margin-top: 0; background-image: none;">
             <h1>NY HOSPITALS EFFICIENCY ANALYSIS</h1>
             <div class="subtitle">~6th Datathon DubsTech 2025~</div>
-            <div class="data-source">Data Source: [Your Data Source Here]</div>
+            <div class="data-source">Data Source: <a href="https://health.data.ny.gov/Health/Hospital-Inpatient-Discharges-SPARCS-De-Identified/7dtz-qxmr/about_data" target="_blank">Hospital Inpatient Discharges</a></div>
         </div>
     </header>
     
@@ -279,9 +279,10 @@
     <main>
         <div class="container">
             <section class="content-section">
-                <h2>Background</h2>
-                <p>This analysis examines the operational efficiency of New York hospitals using data from 2025. We evaluate key performance indicators across multiple dimensions to identify best practices and areas for improvement in healthcare delivery.</p>
-                <p>Our methodology combines quantitative metrics with qualitative assessments to provide a comprehensive view of hospital performance while accounting for variations in patient populations and service offerings.</p>
+                <h2>Intro</h2>
+                <p>With over 1.19 million rows and 14 detailed columns, this analysis examines the efficiency of hospitals in New York State using data from 2009 to 2021, sourced from the Statewide Planning and Research Cooperative System (SPARCS). We evaluate key performance indicators across multiple dimensions to identify best practices and uncover the factors that contribute to hospital efficiency.</p>
+                <h4><em>Our objective is to develop a metric to rank and categorize hospital facilities based on their performance.</em></h4>
+                <p>The methodology integrates quantitative metrics with qualitative assessments to provide a comprehensive evaluation of hospital operations, while accounting for variations in patient discharges and service offerings.</p>
             </section>
         </div>
         
