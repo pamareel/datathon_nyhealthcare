@@ -36,20 +36,120 @@
         }
     </style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">NY Hospital</span>
+                <span class="down">Efficiency Analysis</span>
+            </h1>
+            <p class="header-subtitle">6th DubsTech Datathon 2025</p>            
+        </div>              
+    </header><!-- end of page header -->
 
-    <h1>Hospital Efficiency Analysis</h1>
+     <!-- Background Session -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/hospital_bed.jpg" class="about-img" alt="">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Background</p>
+                    <h2 class="section-title mb-3">New York Hospital</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam impedit iure nemo a iste 
+                        <br>culpa! Quasi quibusdam hic recusandae delectus velit officiis explicabo voluptatibus! Nemo esse similique, voluptates labore distinctio, placeat explicabo facilis molestias, blanditiis culpa iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa sint ex voluptatum expedita aliquid! Debitis, nam!              
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4">Data Source</button>
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of Background Session -->
+    
+    <!-- Analysis section -->
+    <section class="section" id="analysis">
+        <div class="container text-center">
+            <p class="section-subtitle">How we determine efficiency ?</p>
+            <h6 class="section-title mb-6">Discharge Rate x Severity x Profitability</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="metrics-card">
+                        <img src="assets/imgs/hospital_bed.jpg" class="discharge-card-img">    
+                        <span class="dischage-card-overlay">
+                            <span class="dischage-card-caption">
+                                <h4>Discharge</h5>
+                                <p class="font-weight-normal">xxxxx</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="metrics-card">
+                        <img class="portfolio-card-img" src="assets/imgs/mini_staff.jpg" class="img-responsive rounded">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Severity</h5>
+                                <p class="font-weight-normal">xxxxx</p>
+                            </span>                         
+                        </span>                         
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/hospital_bed.jpg" class="img-responsive rounded">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Profitability</h5>
+                                <p class="font-weight-normal">xxx</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of Analysis section -->
 
-    <h2>Members</h2>
-    <div class="member">
-        <img src="LINK_TO_MEMBER1_PHOTO.jpg" alt="Member 1">
-        <a href="https://www.linkedin.com/in/member1" target="_blank">Member 1 Name</a>
-    </div>
-    <div class="member">
-        <img src="LINK_TO_MEMBER2_PHOTO.jpg" alt="Member 2">
-        <a href="https://www.linkedin.com/in/member2" target="_blank">Member 2 Name</a>
-    </div>
-    <!-- Add more members as needed -->
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Source</h6>
+                    <p class="m-0 text-light">Github</p>
+                    <p class="m-0 text-light">Tableau</p>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+    
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Team's Member</h6>
+                    <a href="https://www.linkedin.com/in/member1" target="_blank">Member 1 Name</a>
+                    <a href="https://www.linkedin.com/in/member1" target="_blank">Member 2 Name</a>
+                    <a href="https://www.linkedin.com/in/member1" target="_blank">Member 3 Name</a>
+                    <a href="https://www.linkedin.com/in/member1" target="_blank">Member 4 Name</a>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+    
 
     <h2>Background of Project</h2>
     <p>This is a 24-hour project for the 6th DubsTech Datathon 2025, held at the University of Washington.</p>
