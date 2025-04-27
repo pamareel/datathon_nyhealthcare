@@ -35,6 +35,7 @@ Our primary objective is to uncover actionable insights into hospital performanc
 - HTML for document analysis report
 
 ## Other Resources Link
+- [Python for Cleaning Data](https://github.com/pamareel/pamareel.github.io/blob/main/Datathon_2025.ipynb)
 - [Tableau](https://public.tableau.com/views/NYHospitalEfficiencyAnalysis/Trend?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
