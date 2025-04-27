@@ -1,26 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NY Hospital Efficiency Analysis - DubsTech 2025</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>NY Hospitals Efficiency Analysis</title>
+    <!-- Add Google Fonts for DM Serif Text -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
     <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        /* Header Font Styles */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'DM Serif Text', serif;
+            font-weight: normal;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-image: url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: rgba(0, 91, 150, 0.9);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-family: 'DM Serif Text', serif;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            letter-spacing: 0.5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        .data-source {
+            font-style: italic;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+        
+        /* Main Content Styles */
+        .content-section {
+            padding: 20px 0;
+        }
+        
+        h2 {
+            color: #005b96;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(0, 91, 150, 0.3);
+            font-size: 1.8rem;
+        }
+        
+        .tableau-container {
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        /* ... (rest of your existing CSS remains the same) ... */
     </style>
 </head>
 <body>
+    <!-- Your existing HTML content remains the same -->
     <header>
         <div class="container" style="background-color: transparent; box-shadow: none; margin-top: 0; background-image: none;">
             <h1>NY HOSPITALS EFFICIENCY ANALYSIS</h1>
-            <div class="subtitle">~6th DubsTech Datathon 2025~</div>
+            <div class="subtitle">~6th Datathon DubsTech 2025~</div>
             <div class="data-source">Data Source: [Your Data Source Here]</div>
         </div>
     </header>
+    
+    <!-- Content -->
     
     <main>
         <div class="container">
@@ -34,8 +117,51 @@
         <div class="container">
             <section class="content-section">
                 <h2>Data Source</h2>
-                <div class="image-placeholder">
-                    [Interactive Data Visualization Will Appear Here]
+                <div class="tableau-container">
+                    <div class='tableauPlaceholder' id='viz1745723745354' style='position: relative; width: 100%;'>
+                        <noscript>
+                            <a href='#'>
+                                <img alt=' ' src='https://public.tableau.com/static/images/Ho/HowtowinNWTLottery/D1Howtowin/1_rss.png' style='border: none; width: 100%;' />
+                            </a>
+                        </noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='HowtowinNWTLottery/D1Howtowin' />
+                            <param name='tabs' value='yes' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https://public.tableau.com/static/images/Ho/HowtowinNWTLottery/D1Howtowin/1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-GB' />
+                        </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1745723745354');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        if (divElement.offsetWidth > 800) {
+                            vizElement.style.minWidth = '1000px';
+                            vizElement.style.maxWidth = '100%';
+                            vizElement.style.minHeight = '850px';
+                            vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+                        } else if (divElement.offsetWidth > 500) {
+                            vizElement.style.minWidth = '1000px';
+                            vizElement.style.maxWidth = '100%';
+                            vizElement.style.minHeight = '850px';
+                            vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+                        } else {
+                            vizElement.style.width = '100%';
+                            vizElement.style.minHeight = '1900px';
+                            vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px';
+                        }
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
                 </div>
                 <a href="#" class="btn">Explore Full Dataset</a>
             </section>
@@ -43,7 +169,7 @@
         
         <div class="container">
             <section class="content-section">
-                <h2>How to Evaluate Efficiency?</h2>
+                <h2>How to Evaluate Efficiency</h2>
                 <div class="evaluation-methods">
                     <div class="method">
                         <div class="method-icon">📊</div>
@@ -52,18 +178,83 @@
                     </div>
                     <div class="method">
                         <div class="method-icon">🏥</div>
-                        <h3>Severity Level</h3>
+                        <h3>Severity Adjustment</h3>
                         <p>Case-mix adjusted comparisons that account for differences in patient acuity levels.</p>
                     </div>
                     <div class="method">
                         <div class="method-icon">💰</div>
-                        <h3>Profitability</h3>
-                        <p>Analyzing cost-per-case efficiency metrics and operational charges ratios.</p>
+                        <h3>Resource Utilization</h3>
+                        <p>Analyzing cost-per-case efficiency metrics and operational expenditure ratios.</p>
                     </div>
                 </div>
             </section>
-            <h1>hello</h1>
-            <div class='tableauPlaceholder' id='viz1745723745354' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HowtowinNWTLottery&#47;D1Howtowin&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HowtowinNWTLottery&#47;D1Howtowin' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HowtowinNWTLottery&#47;D1Howtowin&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745723745354');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1900px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            
+            <section class="analysis-section">
+                <h2>Discharge Rate Analysis</h2>
+                <div class="analysis-grid">
+                    <div class="analysis-item">
+                        <h3>Discharge Rate Trend</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Trend over Time]
+                            </div>
+                        </div>
+                        <p>Analysis of discharge rate trends across different hospital systems.</p>
+                    </div>
+                    <div class="analysis-item">
+                        <h3>Top Performing Hospitals</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Top 5 Hospitals]
+                            </div>
+                        </div>
+                        <p>Identifying the most efficient hospitals based on discharge metrics.</p>
+                    </div>
+                    <div class="analysis-item">
+                        <h3>Improvement Opportunities</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Bottom 5 Hospitals]
+                            </div>
+                        </div>
+                        <p>Hospitals with the greatest opportunities for discharge process improvement.</p>
+                    </div>
+                    <div class="analysis-item">
+                        <h3>Efficiency Benchmarks</h3>
+                        <div class="tableau-container">
+                            <!-- You can add another Tableau visualization here -->
+                            <div class="image-placeholder" style="height: 300px;">
+                                [Tableau Visualization: Benchmark Comparisons]
+                            </div>
+                        </div>
+                        <p>Comparing performance against regional and national benchmarks.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="team-section">
+                <h2>Project Team</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <h3>Team Member 1</h3>
+                        <p>Data Analyst</p>
+                        <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a>
+                    </div>
+                    <div class="team-member">
+                        <h3>Team Member 2</h3>
+                        <p>Healthcare Specialist</p>
+                        <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a>
+                    </div>
+                    <div class="team-member">
+                        <h3>Team Member 3</h3>
+                        <p>Visualization Expert</p>
+                        <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     
