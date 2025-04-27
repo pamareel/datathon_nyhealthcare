@@ -312,6 +312,7 @@
                         <div class="method-icon">📊</div>
                         <h3>Discharge Volume</h3>
                         <p>to measure the rate of hospital activity</p>
+                        <p style="font-size: x-small; text-align: center; margin-top:0px">The total number of patients released from the hospital after treatment</p>
                     </div>
                     <div class="method">
                         <div class="method-icon">🏥</div>
@@ -324,7 +325,7 @@
                         <h3>Profitability</h3>
                         <p>to evaluate financial health</p>
                         <p style="font-size: x-small; text-align: center; margin-bottom:0px">Profit = (Mean Charge - Mean Cost)</p>
-                        <p style="font-size: x-small; text-align: center; margin-top:0px">Profitability = Profit / Mean Charge Mean</p>
+                        <p style="font-size: x-small; text-align: center; margin-top:0px">Profitability = Profit / Mean Charge</p>
                     </div>
                 </div>
                 <p style="margin-top:5px; margin-bottom: 0px;">By using these three areas to assess performance, not only is physical performance evaluated (<em>discharge</em> and <em>severity</em>), but financial performance is also considered. We can then identify which hospital performs best in terms of efficiency.</p>
@@ -607,28 +608,58 @@
         <div class="container">
             <section class="content-section" style="padding: 0px;">
                 <h2 style="margin-top: 0;">Summary Dashboard</h2>
-                
-                <div class="tableau-container" style="display: flex; justify-content: center; align-items: center">
-                    <div class="image-placeholder" style="width:100%">
-                        <div class='tableauPlaceholder' id='viz1745777353423' style='position: relative 500px;'>
-                            <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;TopBottom10&#47;1_rss.png' style='border: none' /></a></noscript>
-                            <object class='tableauViz'  style='display:none;'>
-                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                                <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NYHospitalEfficiencyAnalysis&#47;TopBottom10' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;TopBottom10&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' />
-                            </object>
+                <div class="analysis-item" style="margin-top: 20px;">
+                    <!-- <h3>Overall Dashboard</h3> -->
+                    <div class="tableau-container" style="display: flex; justify-content: center; align-items: center">
+                        <div class="image-placeholder" style="width:100%">
+                            <div class='tableauPlaceholder' id='viz1745777353423' style='position: relative 500px;'>
+                                <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;TopBottom10&#47;1_rss.png' style='border: none' /></a></noscript>
+                                <object class='tableauViz'  style='display:none;'>
+                                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                    <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NYHospitalEfficiencyAnalysis&#47;TopBottom10' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;TopBottom10&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' />
+                                </object>
+                            </div>
+                            <script type='text/javascript'>
+                                var divElement = document.getElementById('viz1745777353423');
+                                var vizElement = divElement.getElementsByTagName('object')[0];
+                                
+                                /* (divElement.offsetWidth*0.7)+'px'; */
+                                /* vizElement.style.maxHeight='650px'; */
+                                var scriptElement = document.createElement('script');
+                                vizElement.style.width='100%';
+                                vizElement.style.height=(divElement.offsetWidth*0.65)+'px'; 
+                                
+                                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                            </script>
                         </div>
-                        <script type='text/javascript'> 
-                            var divElement = document.getElementById('viz1745777353423');
-                            var vizElement = divElement.getElementsByTagName('object')[0];
-                            var scriptElement = document.createElement('script');
-                            vizElement.style.width='100%';
-                            vizElement.style.height=(divElement.offsetWidth*0.65)+'px';
-                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                        </script>
                     </div>
                 </div>
-                <p>XXXXX</p>
+
+                <div class="analysis-item" style="margin-top: 20px;">
+                    <!-- <h3>Overall Dashboard</h3> -->
+                    <div class="tableau-container" style="display: flex; justify-content: center; align-items: center">
+                        <div class="image-placeholder" style="width:100%">
+                            <div class='tableauPlaceholder' id='viz1745781864828' style='position: relative'>
+                                <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;Trend2&#47;1_rss.png' style='border: none' /></a></noscript>
+                                <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NYHospitalEfficiencyAnalysis&#47;Trend2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYHospitalEfficiencyAnalysis&#47;Trend2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object>
+                            </div>
+                            <script type='text/javascript'>
+                                var divElement = document.getElementById('viz1745781864828');
+                                var vizElement = divElement.getElementsByTagName('object')[0];
+                                
+                                var scriptElement = document.createElement('script');
+                                vizElement.style.width='100%';
+                                vizElement.style.height=(divElement.offsetWidth*0.65)+'px'; 
+                                
+                                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                
+                
             </section>
         </div>
 
