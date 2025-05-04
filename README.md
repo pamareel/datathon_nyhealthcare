@@ -30,7 +30,7 @@ Our primary objective is to uncover actionable insights into hospital performanc
 3. **Discharge** metric, to detect volume volatility
 
 ## 🛠 Tools Used:
-- Python for data preperation
+- Python for data preparation
 - Tableau for visualization and dashboard building
 - HTML for document analysis report
 
